@@ -815,3 +815,125 @@ img, svg { display: block; max-width: 100%; }
     font-size: 0.875rem;
   }
 }
+
+/* ============================================================
+   LEGAL / CONTENT PAGES (about, shipping, returns, privacy, terms)
+   ============================================================ */
+.legal {
+  padding: calc(var(--nav-height) + 56px) 0 96px;
+  background: var(--bg-primary);
+  min-height: 100vh;
+}
+
+.legal .container { max-width: 760px; }
+
+.legal-header { margin-bottom: 40px; }
+
+.legal-updated {
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.legal-body h3 {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 36px 0 12px;
+  color: var(--text-primary);
+}
+
+.legal-body h3:first-child { margin-top: 0; }
+
+.legal-body p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.legal-body ul {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.legal-body li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.legal-body li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.7;
+}
+
+.legal-body strong { color: var(--text-primary); }
+
+.legal-body a {
+  color: var(--accent);
+  transition: opacity 0.2s;
+}
+
+.legal-body a:hover { opacity: 0.75; }
+
+.legal-body .legal-note { margin-top: 36px; }
+
+.legal-body .btn { margin-top: 12px; }
+
+/* ============================================================
+   FOOTER — NAVIGATION LINKS & SUPPORT HOURS
+   ============================================================ */
+.footer-nav {
+  max-width: var(--container-max);
+  margin: 0 auto 28px;
+  padding: 0 24px 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+}
+
+.footer-nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover { color: var(--accent); }
+
+.footer-hours {
+  text-align: center;
+  padding: 16px 24px 0;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer-hours strong {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    gap: 8px 18px;
+  }
+}
