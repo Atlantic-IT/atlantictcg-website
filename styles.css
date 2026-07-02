@@ -159,6 +159,20 @@ img, svg { display: block; max-width: 100%; }
   color: var(--accent);
 }
 
+.nav-links .nav-shop {
+  color: #fff;
+  background: var(--accent);
+  margin-left: 4px;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.28);
+}
+
+.nav-links .nav-shop:hover {
+  background: var(--accent-dark);
+  color: #fff;
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.42);
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -207,6 +221,21 @@ img, svg { display: block; max-width: 100%; }
 
 .nav-mobile a:last-child { border-bottom: none; }
 .nav-mobile a:hover { color: var(--accent); }
+
+.nav-mobile .nav-mobile-shop {
+  margin-top: 12px;
+  text-align: center;
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.nav-mobile .nav-mobile-shop:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
 
 /* ============================================================
    BUTTONS
@@ -340,6 +369,14 @@ img, svg { display: block; max-width: 100%; }
   font-size: 0.875rem;
   color: var(--text-muted);
   letter-spacing: 0.04em;
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 /* Wave divider */
