@@ -346,6 +346,14 @@ img, svg { display: block; max-width: 100%; }
   background-clip: text;
 }
 
+.hero-tagline {
+  font-size: clamp(1rem, 2.2vw, 1.375rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-secondary);
@@ -473,6 +481,10 @@ img, svg { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+
+.products-grid .product-card:nth-child(odd):last-child {
+  grid-column: 1 / -1;
 }
 
 .product-card {
@@ -724,6 +736,17 @@ img, svg { display: block; max-width: 100%; }
 .footer-logo-img {
   height: 40px;
   width: auto;
+}
+
+.footer-tagline {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-tagline a {
+  color: var(--text-secondary);
 }
 
 .footer-copy {
