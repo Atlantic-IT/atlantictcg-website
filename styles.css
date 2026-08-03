@@ -952,6 +952,10 @@ a.brand-badge {
 
 .legal-body a:hover { opacity: 0.75; }
 
+/* Buttons inside legal-body keep button text color, not link color */
+.legal-body a.btn-primary { color: #fff; }
+.legal-body a.btn-primary:hover { opacity: 1; }
+
 .legal-body .legal-note { margin-top: 36px; }
 
 .legal-body .btn { margin-top: 12px; }
