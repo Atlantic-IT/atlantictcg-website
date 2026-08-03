@@ -3,50 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlantic TCG — Trading Cards, Games, Comics & Collectibles | Long Island, NY</title>
+  <title>Atlantic TCG — Trading Cards & Games | Long Island, NY</title>
   <meta name="description" content="Atlantic TCG is a Long Island-based online hobby shop for trading cards, card supplies, tabletop gaming, video games, comics, and collectibles.">
-  <meta name="keywords" content="trading cards, TCG, card supplies, tabletop gaming, RPG accessories, video games, retro video games, comics, collectibles, Pokemon, Magic the Gathering, One Piece, Gundam Card Game, Long Island, New York">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Atlantic TCG">
+
+  <link rel="canonical" href="https://www.atlantictcg.com/">
+  <link rel="preconnect" href="https://shop.atlantictcg.com">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Atlantic TCG">
-  <meta property="og:title" content="Atlantic TCG — Trading Cards, Games, Comics &amp; Collectibles">
+  <meta property="og:title" content="Atlantic TCG — Trading Cards &amp; Games">
   <meta property="og:description" content="Long Island-based online hobby shop for trading cards, card supplies, tabletop gaming, video games, comics, and collectibles.">
   <meta property="og:url" content="https://www.atlantictcg.com/">
   <meta property="og:image" content="https://www.atlantictcg.com/logo.png">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Atlantic TCG — Trading Cards, Games, Comics &amp; Collectibles">
-  <meta name="twitter:description" content="Trading cards, tabletop games, video games, comics, and collectibles. Long Island, New York.">
+  <meta name="twitter:title" content="Atlantic TCG — Trading Cards &amp; Games">
+  <meta name="twitter:description" content="Long Island-based online hobby shop for trading cards, card supplies, tabletop gaming, video games, comics, and collectibles.">
+  <meta name="twitter:image" content="https://www.atlantictcg.com/logo.png">
 
-  <link rel="canonical" href="https://www.atlantictcg.com/">
-  <link rel="icon" type="image/png" href="logo.png">
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Structured data: tells Google the site name is "Atlantic TCG" (not the bare domain) -->
+  <!-- Structured data: site name + store info for search engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Atlantic TCG",
-    "alternateName": "Atlantic TCG — Trading Cards & Games",
-    "url": "https://www.atlantictcg.com/"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Atlantic TCG",
-    "description": "Long Island-based online hobby shop for trading cards, card supplies, tabletop gaming, video games, comics, and collectibles.",
-    "url": "https://www.atlantictcg.com/",
-    "logo": "https://www.atlantictcg.com/logo.png",
-    "image": "https://www.atlantictcg.com/logo.png",
-    "areaServed": "Long Island, New York",
-    "sameAs": ["https://shop.atlantictcg.com/"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.atlantictcg.com/#website",
+        "name": "Atlantic TCG",
+        "alternateName": "Atlantic TCG — Trading Cards & Games",
+        "url": "https://www.atlantictcg.com/"
+      },
+      {
+        "@type": "Store",
+        "@id": "https://www.atlantictcg.com/#store",
+        "name": "Atlantic TCG",
+        "legalName": "Atlantic Information Technology Consulting Inc.",
+        "description": "Long Island-based online hobby shop for trading cards, card supplies, tabletop gaming, video games, comics, and collectibles.",
+        "url": "https://www.atlantictcg.com/",
+        "logo": "https://www.atlantictcg.com/logo.png",
+        "image": "https://www.atlantictcg.com/logo.png",
+        "email": "sales@atlantictcg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        "sameAs": [
+          "https://www.instagram.com/atlantic.tcg",
+          "https://shop.atlantictcg.com/"
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -58,7 +87,7 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="logo.png" alt="Atlantic TCG" class="nav-logo-img">
+        <img src="logo-96.webp" alt="Atlantic TCG home" width="48" height="48" class="nav-logo-img">
       </a>
 
       <ul class="nav-links" role="list">
@@ -95,7 +124,7 @@
     <div class="hero-bg" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <img src="logo.png" alt="Atlantic TCG" class="hero-logo">
+      <img src="logo-360.webp" alt="Atlantic TCG logo" width="180" height="180" class="hero-logo">
       <h1>Atlantic TCG</h1>
       <p class="hero-tagline">Trading Cards &amp; Games</p>
 
@@ -106,7 +135,7 @@
       <span class="hero-location">Long Island, New York</span>
 
       <div class="hero-actions">
-        <a href="https://shop.atlantictcg.com/" class="btn btn-primary" target="_blank" rel="noopener">🛒 Shop Now</a>
+        <a href="https://shop.atlantictcg.com/" class="btn btn-primary" target="_blank" rel="noopener">🛒 Shop Trading Cards &amp; Games</a>
       </div>
     </div>
 
@@ -227,10 +256,10 @@
       </div>
 
       <div class="brands-list" role="list" aria-label="Supported trading card game brands">
-        <span class="brand-badge" role="listitem">Gundam</span>
-        <span class="brand-badge" role="listitem">Pok&eacute;mon</span>
-        <span class="brand-badge" role="listitem">One Piece</span>
-        <span class="brand-badge" role="listitem">Magic: The Gathering</span>
+        <a href="gundam-card-game.html" class="brand-badge" role="listitem">Gundam</a>
+        <a href="pokemon.html" class="brand-badge" role="listitem">Pok&eacute;mon</a>
+        <a href="one-piece-card-game.html" class="brand-badge" role="listitem">One Piece</a>
+        <a href="magic-the-gathering.html" class="brand-badge" role="listitem">Magic: The Gathering</a>
       </div>
 
     </div>
@@ -359,10 +388,17 @@
       <a href="legal.html">Legal Notice</a>
     </nav>
 
+    <nav class="footer-nav footer-nav--games" aria-label="Trading card games">
+      <a href="pokemon.html">Pok&eacute;mon TCG</a>
+      <a href="magic-the-gathering.html">Magic: The Gathering</a>
+      <a href="one-piece-card-game.html">One Piece Card Game</a>
+      <a href="gundam-card-game.html">Gundam Card Game</a>
+    </nav>
+
     <div class="footer-inner">
 
       <a href="#home" class="footer-logo">
-        <img src="logo.png" alt="Atlantic TCG" class="footer-logo-img">
+        <img src="logo-96.webp" alt="Atlantic TCG home" width="40" height="40" class="footer-logo-img">
       </a>
 
       <p class="footer-tagline">
