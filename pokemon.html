@@ -17,31 +17,107 @@
   <meta property="og:title" content="Pokémon TCG Cards, Sealed Product &amp; Supplies">
   <meta property="og:description" content="Shop Pokémon TCG booster packs, Elite Trainer Boxes, sealed product, and card supplies from Atlantic TCG — a Long Island, NY shop shipping across the U.S.">
   <meta property="og:url" content="https://www.atlantictcg.com/pokemon.html">
-  <meta property="og:image" content="https://www.atlantictcg.com/logo.png">
-  <meta property="og:image:width" content="400">
-  <meta property="og:image:height" content="400">
+  <meta property="og:image" content="https://www.atlantictcg.com/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pokémon TCG Cards, Sealed Product &amp; Supplies">
   <meta name="twitter:description" content="Shop Pokémon TCG booster packs, Elite Trainer Boxes, sealed product, and card supplies from Atlantic TCG — a Long Island, NY shop shipping across the U.S.">
-  <meta name="twitter:image" content="https://www.atlantictcg.com/logo.png">
+  <meta name="twitter:image" content="https://www.atlantictcg.com/social-card.jpg">
 
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.atlantictcg.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Pokémon TCG", "item": "https://www.atlantictcg.com/pokemon.html" }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.atlantictcg.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pokémon TCG",
+            "item": "https://www.atlantictcg.com/pokemon.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.atlantictcg.com/pokemon.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you sell individual Pokémon cards or just sealed product?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our focus is sealed product and supplies, with select singles listed as inventory allows. If you're hunting a specific card, reach out — we may have it or be able to source it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your booster packs and boxes factory sealed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We sell only factory-sealed product obtained from legitimate distribution — we do not sell loose packs from opened boxes, weighed packs, or resealed items."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you ship Pokémon cards safely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sealed product is packed with appropriate protection for its size and weight, and cards ship in sleeves and rigid protection. Details are in our shipping policy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer local pickup on Long Island?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Local pickup options are in development — see the coming soon section for what's rolling out next."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.atlantictcg.com/pokemon.html#page",
+        "url": "https://www.atlantictcg.com/pokemon.html",
+        "name": "Pokémon TCG at Atlantic TCG",
+        "isPartOf": {
+          "@id": "https://www.atlantictcg.com/#website"
+        },
+        "about": {
+          "@id": "https://www.atlantictcg.com/#store"
+        },
+        "provider": {
+          "@id": "https://www.atlantictcg.com/#store"
+        },
+        "significantLink": "https://shop.atlantictcg.com/collections/pokemon"
+      }
     ]
   }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6RNSXP25F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S6RNSXP25F');
   </script>
 </head>
 <body>
@@ -51,16 +127,16 @@
        =================================================== -->
   <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="logo-96.webp" alt="Atlantic TCG home" width="48" height="48" class="nav-logo-img">
+      <a href="/" class="nav-logo">
+        <img src="/logo-96.webp" alt="Atlantic TCG home" width="48" height="48" class="nav-logo-img">
       </a>
 
       <ul class="nav-links" role="list">
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#products">What We Carry</a></li>
-        <li><a href="index.html#brands">Games</a></li>
-        <li><a href="index.html#coming-soon">Coming Soon</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/#products">What We Carry</a></li>
+        <li><a href="/#brands">Games</a></li>
+        <li><a href="/#coming-soon">Coming Soon</a></li>
+        <li><a href="/#contact">Contact</a></li>
         <li><a href="https://shop.atlantictcg.com/" class="nav-shop" target="_blank" rel="noopener">🛒 Shop</a></li>
       </ul>
 
@@ -72,11 +148,11 @@
     </div>
 
     <div class="nav-mobile" id="navMobile" role="menu">
-      <a href="about.html" role="menuitem">About</a>
-      <a href="index.html#products" role="menuitem">What We Carry</a>
-      <a href="index.html#brands" role="menuitem">Games</a>
-      <a href="index.html#coming-soon" role="menuitem">Coming Soon</a>
-      <a href="index.html#contact" role="menuitem">Contact</a>
+      <a href="/about.html" role="menuitem">About</a>
+      <a href="/#products" role="menuitem">What We Carry</a>
+      <a href="/#brands" role="menuitem">Games</a>
+      <a href="/#coming-soon" role="menuitem">Coming Soon</a>
+      <a href="/#contact" role="menuitem">Contact</a>
       <a href="https://shop.atlantictcg.com/" class="nav-mobile-shop" role="menuitem" target="_blank" rel="noopener">🛒 Shop Now</a>
     </div>
   </nav>
@@ -125,13 +201,13 @@
 
         <h2>Buying Pok&eacute;mon Product from Atlantic TCG</h2>
         <p>
-          Everything we sell is genuine, verified product sourced through legitimate channels — never resealed packs, weighed packs, or grey-market substitutes. Sealed product ships in protective packaging so boxes and ETBs arrive in collectible condition, and singles ship sleeved and protected. See our <a href="shipping.html">shipping policy</a> for processing times and our <a href="returns.html">return policy</a> for how we handle damaged or incorrect items. You can read more about how we operate on our <a href="about.html">about page</a>.
+          Everything we sell is genuine, verified product sourced through legitimate channels — never resealed packs, weighed packs, or grey-market substitutes. Sealed product ships in protective packaging so boxes and ETBs arrive in collectible condition, and singles ship sleeved and protected. See our <a href="/shipping.html">shipping policy</a> for processing times and our <a href="/returns.html">return policy</a> for how we handle damaged or incorrect items. You can read more about how we operate on our <a href="/about.html">about page</a>.
         </p>
 
         <h2>Pok&eacute;mon TCG — Frequently Asked Questions</h2>
         <h3>Do you sell individual Pok&eacute;mon cards or just sealed product?</h3>
         <p>
-          Our focus is sealed product and supplies, with select singles listed as inventory allows. If you're hunting a specific card, <a href="index.html#contact">reach out</a> — we may have it or be able to source it.
+          Our focus is sealed product and supplies, with select singles listed as inventory allows. If you're hunting a specific card, <a href="/#contact">reach out</a> — we may have it or be able to source it.
         </p>
         <h3>Are your booster packs and boxes factory sealed?</h3>
         <p>
@@ -139,16 +215,16 @@
         </p>
         <h3>Do you ship Pok&eacute;mon cards safely?</h3>
         <p>
-          Yes. Sealed product is packed with appropriate protection for its size and weight, and cards ship in sleeves and rigid protection. Details are in our <a href="shipping.html">shipping policy</a>.
+          Yes. Sealed product is packed with appropriate protection for its size and weight, and cards ship in sleeves and rigid protection. Details are in our <a href="/shipping.html">shipping policy</a>.
         </p>
         <h3>Do you offer local pickup on Long Island?</h3>
         <p>
-          Local pickup options are in development — see the <a href="index.html#coming-soon">coming soon</a> section for what's rolling out next.
+          Local pickup options are in development — see the <a href="/#coming-soon">coming soon</a> section for what's rolling out next.
         </p>
 
         <h2>More Games We Follow</h2>
         <p>
-          Also see our pages for <a href="magic-the-gathering.html">Magic: The Gathering</a>, the <a href="one-piece-card-game.html">One Piece Card Game</a>, and the <a href="gundam-card-game.html">Gundam Card Game</a> — or <a href="index.html#contact">contact us</a> with questions about any product.
+          Also see our pages for <a href="/magic-the-gathering.html">Magic: The Gathering</a>, the <a href="/one-piece-card-game.html">One Piece Card Game</a>, and the <a href="/gundam-card-game.html">Gundam Card Game</a> — or <a href="/#contact">contact us</a> with questions about any product. Need sleeves, binders, or toploaders? See our <a href="/card-supplies.html">card supplies</a> page.
         </p>
 
         <div class="legal-note">
@@ -165,26 +241,27 @@
        =================================================== -->
   <footer class="footer">
     <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="about.html">About Us</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="shipping.html">Shipping Policy</a>
-      <a href="returns.html">Return Policy</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="legal.html">Legal Notice</a>
+      <a href="/about.html">About Us</a>
+      <a href="/#contact">Contact</a>
+      <a href="/shipping.html">Shipping Policy</a>
+      <a href="/returns.html">Return Policy</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/legal.html">Legal Notice</a>
     </nav>
 
-    <nav class="footer-nav footer-nav--games" aria-label="Trading card games">
-      <a href="pokemon.html">Pok&eacute;mon TCG</a>
-      <a href="magic-the-gathering.html">Magic: The Gathering</a>
-      <a href="one-piece-card-game.html">One Piece Card Game</a>
-      <a href="gundam-card-game.html">Gundam Card Game</a>
+    <nav class="footer-nav footer-nav--games" aria-label="Trading card games and supplies">
+      <a href="/pokemon.html">Pok&eacute;mon TCG</a>
+      <a href="/magic-the-gathering.html">Magic: The Gathering</a>
+      <a href="/one-piece-card-game.html">One Piece Card Game</a>
+      <a href="/gundam-card-game.html">Gundam Card Game</a>
+      <a href="/card-supplies.html">Card Supplies</a>
     </nav>
 
     <div class="footer-inner">
 
-      <a href="index.html" class="footer-logo">
-        <img src="logo-96.webp" alt="Atlantic TCG home" width="40" height="40" class="footer-logo-img">
+      <a href="/" class="footer-logo">
+        <img src="/logo-96.webp" alt="Atlantic TCG home" width="40" height="40" class="footer-logo-img">
       </a>
 
       <p class="footer-tagline">

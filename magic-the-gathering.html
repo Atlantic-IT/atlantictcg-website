@@ -17,31 +17,107 @@
   <meta property="og:title" content="Magic: The Gathering Cards &amp; Sealed Product">
   <meta property="og:description" content="Magic: The Gathering booster boxes, Commander decks, singles, and MTG supplies from Atlantic TCG, a collector-run online hobby shop based in Long Island, NY.">
   <meta property="og:url" content="https://www.atlantictcg.com/magic-the-gathering.html">
-  <meta property="og:image" content="https://www.atlantictcg.com/logo.png">
-  <meta property="og:image:width" content="400">
-  <meta property="og:image:height" content="400">
+  <meta property="og:image" content="https://www.atlantictcg.com/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Magic: The Gathering Cards &amp; Sealed Product">
   <meta name="twitter:description" content="Magic: The Gathering booster boxes, Commander decks, singles, and MTG supplies from Atlantic TCG, a collector-run online hobby shop based in Long Island, NY.">
-  <meta name="twitter:image" content="https://www.atlantictcg.com/logo.png">
+  <meta name="twitter:image" content="https://www.atlantictcg.com/social-card.jpg">
 
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.atlantictcg.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Magic: The Gathering", "item": "https://www.atlantictcg.com/magic-the-gathering.html" }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.atlantictcg.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Magic: The Gathering",
+            "item": "https://www.atlantictcg.com/magic-the-gathering.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.atlantictcg.com/magic-the-gathering.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you carry Commander decks and Commander staples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Preconstructed Commander decks are a stocking priority, and we list Commander-relevant singles as inventory allows. If you're chasing specific staples, contact us."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your MTG booster boxes factory sealed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — only factory-sealed product from legitimate distribution. We never sell resealed boxes or loose packs sold as sealed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you buy or trade Magic collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not yet — buylist and trade-in options are being evaluated as we grow. Email us if you have a collection you're looking to move and we'll tell you honestly whether we can help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What formats do the products you sell support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Current sealed product is Standard-legal and drafts well, and Commander precons are format-ready out of the box. Product pages in the shop note set and format details where relevant."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.atlantictcg.com/magic-the-gathering.html#page",
+        "url": "https://www.atlantictcg.com/magic-the-gathering.html",
+        "name": "Magic: The Gathering at Atlantic TCG",
+        "isPartOf": {
+          "@id": "https://www.atlantictcg.com/#website"
+        },
+        "about": {
+          "@id": "https://www.atlantictcg.com/#store"
+        },
+        "provider": {
+          "@id": "https://www.atlantictcg.com/#store"
+        },
+        "significantLink": "https://shop.atlantictcg.com/collections/magic-the-gathering"
+      }
     ]
   }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6RNSXP25F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S6RNSXP25F');
   </script>
 </head>
 <body>
@@ -51,16 +127,16 @@
        =================================================== -->
   <nav class="nav scrolled" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="logo-96.webp" alt="Atlantic TCG home" width="48" height="48" class="nav-logo-img">
+      <a href="/" class="nav-logo">
+        <img src="/logo-96.webp" alt="Atlantic TCG home" width="48" height="48" class="nav-logo-img">
       </a>
 
       <ul class="nav-links" role="list">
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#products">What We Carry</a></li>
-        <li><a href="index.html#brands">Games</a></li>
-        <li><a href="index.html#coming-soon">Coming Soon</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/#products">What We Carry</a></li>
+        <li><a href="/#brands">Games</a></li>
+        <li><a href="/#coming-soon">Coming Soon</a></li>
+        <li><a href="/#contact">Contact</a></li>
         <li><a href="https://shop.atlantictcg.com/" class="nav-shop" target="_blank" rel="noopener">🛒 Shop</a></li>
       </ul>
 
@@ -72,11 +148,11 @@
     </div>
 
     <div class="nav-mobile" id="navMobile" role="menu">
-      <a href="about.html" role="menuitem">About</a>
-      <a href="index.html#products" role="menuitem">What We Carry</a>
-      <a href="index.html#brands" role="menuitem">Games</a>
-      <a href="index.html#coming-soon" role="menuitem">Coming Soon</a>
-      <a href="index.html#contact" role="menuitem">Contact</a>
+      <a href="/about.html" role="menuitem">About</a>
+      <a href="/#products" role="menuitem">What We Carry</a>
+      <a href="/#brands" role="menuitem">Games</a>
+      <a href="/#coming-soon" role="menuitem">Coming Soon</a>
+      <a href="/#contact" role="menuitem">Contact</a>
       <a href="https://shop.atlantictcg.com/" class="nav-mobile-shop" role="menuitem" target="_blank" rel="noopener">🛒 Shop Now</a>
     </div>
   </nav>
@@ -123,13 +199,13 @@
 
         <h2>Buying Magic Product from Atlantic TCG</h2>
         <p>
-          We sell genuine Wizards of the Coast product sourced through legitimate channels — no proxies, no counterfeits, no resealed boxes. Sealed product ships with protection appropriate to its weight and size, and singles ship sleeved with rigid protection. Processing times are in our <a href="shipping.html">shipping policy</a>, and our <a href="returns.html">return policy</a> covers damaged or incorrect items. More about how we operate is on our <a href="about.html">about page</a>.
+          We sell genuine Wizards of the Coast product sourced through legitimate channels — no proxies, no counterfeits, no resealed boxes. Sealed product ships with protection appropriate to its weight and size, and singles ship sleeved with rigid protection. Processing times are in our <a href="/shipping.html">shipping policy</a>, and our <a href="/returns.html">return policy</a> covers damaged or incorrect items. More about how we operate is on our <a href="/about.html">about page</a>.
         </p>
 
         <h2>Magic: The Gathering — Frequently Asked Questions</h2>
         <h3>Do you carry Commander decks and Commander staples?</h3>
         <p>
-          Preconstructed Commander decks are a stocking priority, and we list Commander-relevant singles as inventory allows. If you're chasing specific staples, <a href="index.html#contact">contact us</a>.
+          Preconstructed Commander decks are a stocking priority, and we list Commander-relevant singles as inventory allows. If you're chasing specific staples, <a href="/#contact">contact us</a>.
         </p>
         <h3>Are your MTG booster boxes factory sealed?</h3>
         <p>
@@ -137,7 +213,7 @@
         </p>
         <h3>Do you buy or trade Magic collections?</h3>
         <p>
-          Not yet — buylist and trade-in options are being evaluated as we grow. <a href="index.html#contact">Email us</a> if you have a collection you're looking to move and we'll tell you honestly whether we can help.
+          Not yet — buylist and trade-in options are being evaluated as we grow. <a href="/#contact">Email us</a> if you have a collection you're looking to move and we'll tell you honestly whether we can help.
         </p>
         <h3>What formats do the products you sell support?</h3>
         <p>
@@ -146,7 +222,7 @@
 
         <h2>More Games We Follow</h2>
         <p>
-          Also see our pages for the <a href="pokemon.html">Pok&eacute;mon TCG</a>, the <a href="one-piece-card-game.html">One Piece Card Game</a>, and the <a href="gundam-card-game.html">Gundam Card Game</a> — or <a href="index.html#contact">contact us</a> with questions about any product.
+          Also see our pages for the <a href="/pokemon.html">Pok&eacute;mon TCG</a>, the <a href="/one-piece-card-game.html">One Piece Card Game</a>, and the <a href="/gundam-card-game.html">Gundam Card Game</a> — or <a href="/#contact">contact us</a> with questions about any product. Need sleeves, binders, or toploaders? See our <a href="/card-supplies.html">card supplies</a> page.
         </p>
 
         <div class="legal-note">
@@ -163,26 +239,27 @@
        =================================================== -->
   <footer class="footer">
     <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="about.html">About Us</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="shipping.html">Shipping Policy</a>
-      <a href="returns.html">Return Policy</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="legal.html">Legal Notice</a>
+      <a href="/about.html">About Us</a>
+      <a href="/#contact">Contact</a>
+      <a href="/shipping.html">Shipping Policy</a>
+      <a href="/returns.html">Return Policy</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/legal.html">Legal Notice</a>
     </nav>
 
-    <nav class="footer-nav footer-nav--games" aria-label="Trading card games">
-      <a href="pokemon.html">Pok&eacute;mon TCG</a>
-      <a href="magic-the-gathering.html">Magic: The Gathering</a>
-      <a href="one-piece-card-game.html">One Piece Card Game</a>
-      <a href="gundam-card-game.html">Gundam Card Game</a>
+    <nav class="footer-nav footer-nav--games" aria-label="Trading card games and supplies">
+      <a href="/pokemon.html">Pok&eacute;mon TCG</a>
+      <a href="/magic-the-gathering.html">Magic: The Gathering</a>
+      <a href="/one-piece-card-game.html">One Piece Card Game</a>
+      <a href="/gundam-card-game.html">Gundam Card Game</a>
+      <a href="/card-supplies.html">Card Supplies</a>
     </nav>
 
     <div class="footer-inner">
 
-      <a href="index.html" class="footer-logo">
-        <img src="logo-96.webp" alt="Atlantic TCG home" width="40" height="40" class="footer-logo-img">
+      <a href="/" class="footer-logo">
+        <img src="/logo-96.webp" alt="Atlantic TCG home" width="40" height="40" class="footer-logo-img">
       </a>
 
       <p class="footer-tagline">
