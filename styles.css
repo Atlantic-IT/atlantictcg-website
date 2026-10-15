@@ -268,6 +268,12 @@ img, svg { display: block; max-width: 100%; }
   background: var(--border-subtle);
 }
 
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 /* ============================================================
    HERO
    ============================================================ */
@@ -955,6 +961,8 @@ a.brand-badge {
 /* Buttons inside legal-body keep button text color, not link color */
 .legal-body a.btn-primary { color: #fff; }
 .legal-body a.btn-primary:hover { opacity: 1; }
+.legal-body a.btn-outline { color: var(--text-secondary); }
+.legal-body a.btn-outline:hover { color: var(--text-primary); opacity: 1; }
 
 .legal-body .legal-note { margin-top: 36px; }
 
