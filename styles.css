@@ -815,6 +815,93 @@ a.brand-badge {
 }
 
 /* ============================================================
+   SELL YOUR CARDS (homepage banner + sell-your-cards page)
+   ============================================================ */
+.sell-banner {
+  max-width: 760px;
+  margin: 56px auto 0;
+  padding: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  box-shadow: 0 0 40px rgba(14, 165, 233, 0.08);
+}
+
+.sell-banner-title {
+  font-size: clamp(1.375rem, 2.4vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.sell-banner .section-desc { margin: 0 auto 28px; }
+
+.legal-header .btn { margin-top: 24px; }
+
+.sell-steps {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.legal-body .sell-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px;
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  transition: border-color 0.2s;
+}
+
+.legal-body .sell-step::before { content: none; }
+
+.legal-body .sell-step:hover { border-color: var(--accent-border); }
+
+.sell-step-num {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--accent-glow);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sell-step-body { min-width: 0; }
+
+.legal-body .sell-step h3 { margin-top: 8px; }
+
+.legal-body .sell-step p:last-child,
+.legal-body .sell-step ul:last-child { margin-bottom: 0; }
+
+.legal-body .sell-fallback {
+  margin-top: 16px;
+  font-size: 0.9375rem;
+}
+
+/* ============================================================
+   RESPONSIVE — NAV COLLAPSE (≤ 960px)
+   The full desktop link row needs ~930px; collapse to the
+   hamburger menu below that.
+   ============================================================ */
+@media (max-width: 960px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+}
+
+/* ============================================================
    RESPONSIVE — TABLET (≤ 900px)
    ============================================================ */
 @media (max-width: 900px) {
@@ -840,9 +927,6 @@ a.brand-badge {
     --nav-height:  64px;
   }
 
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
-
   .hero-logo { height: 140px; width: 140px; }
 
   .products-grid { grid-template-columns: 1fr; }
@@ -854,6 +938,13 @@ a.brand-badge {
   }
 
   .contact-card { padding: 32px 24px; }
+
+  .sell-banner { padding: 32px 24px; }
+
+  .legal-body .sell-step {
+    padding: 22px 18px;
+    gap: 14px;
+  }
 
   .checklist-arrow { display: none; }
 
