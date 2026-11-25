@@ -341,7 +341,10 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -361,18 +364,14 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .hero-sub {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 1.6vw, 1.0625rem);
   color: var(--text-secondary);
-  max-width: 560px;
+  max-width: 640px;
+  margin: 0 auto;
   line-height: 1.7;
-  margin-bottom: 32px;
 }
 
-.hero-location {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-}
+.hero-sub p + p { margin-top: 12px; }
 
 .hero-actions {
   margin-top: 44px;
@@ -459,7 +458,7 @@ img, svg { display: block; max-width: 100%; }
   font-size: 1.0625rem;
 }
 
-.highlight-tile h4 {
+.highlight-tile h3 {
   font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 4px;
@@ -492,6 +491,21 @@ img, svg { display: block; max-width: 100%; }
 .products-grid .product-card:nth-child(odd):last-child {
   grid-column: 1 / -1;
 }
+
+/* Three-up variant (What We Carry) — collapses to one column on mobile */
+.products-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.products-grid--3 .product-card:nth-child(odd):last-child { grid-column: auto; }
+
+/* Inline text links inside homepage cards and copy */
+.product-card p a,
+.highlight-tile p a,
+.about-text .section-desc a {
+  color: var(--accent);
+  transition: opacity 0.2s;
+}
+.product-card p a:hover,
+.highlight-tile p a:hover,
+.about-text .section-desc a:hover { opacity: 0.75; }
 
 .product-card {
   padding: 32px;
@@ -591,63 +605,34 @@ a.brand-badge {
 }
 
 /* ============================================================
-   COMING SOON
+   SHOP (marketplace cards)
    ============================================================ */
-.coming-soon {
+.shop { background: var(--bg-secondary); }
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shop-card p { margin-bottom: 24px; }
+.shop-card .btn { margin-top: auto; }
+
+/* ============================================================
+   SELL (homepage collection-buying section)
+   ============================================================ */
+.sell {
   background: var(--bg-primary);
   text-align: center;
 }
 
-.coming-soon-inner {
-  max-width: 680px;
-  margin: 0 auto;
-}
-
-.coming-soon-inner .section-desc { margin: 0 auto 48px; }
-
-.checklist {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  text-align: left;
-}
-
-.checklist-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 20px 24px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius);
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: border-color 0.2s;
-}
-
-.checklist-item:hover { border-color: var(--accent-border); }
-
-.checklist-dot {
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-border);
-  background: var(--accent-glow);
-}
-
-.checklist-arrow {
-  margin-left: auto;
-  color: var(--accent);
-  font-size: 0.875rem;
-  opacity: 0.55;
-}
+.sell .sell-banner { margin-top: 0; }
+.sell-banner .section-desc:not(:last-of-type) { margin-bottom: 16px; }
 
 /* ============================================================
    CONTACT
    ============================================================ */
-.contact { background: var(--bg-secondary); }
+.contact { background: var(--bg-primary); }
 
 .contact-inner {
   max-width: 640px;
@@ -803,17 +788,6 @@ a.brand-badge {
   fill: currentColor;
 }
 
-.social-link--soon {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-.social-link--soon:hover {
-  color: var(--text-muted);
-  border-color: var(--border-subtle);
-  background: var(--bg-card);
-}
-
 /* ============================================================
    SELL YOUR CARDS (homepage banner + sell-your-cards page)
    ============================================================ */
@@ -930,7 +904,6 @@ a.brand-badge {
   .hero-logo { height: 140px; width: 140px; }
 
   .products-grid { grid-template-columns: 1fr; }
-  .checklist { grid-template-columns: 1fr; }
 
   .about-highlights {
     display: flex;
@@ -945,8 +918,6 @@ a.brand-badge {
     padding: 22px 18px;
     gap: 14px;
   }
-
-  .checklist-arrow { display: none; }
 
   .footer-inner {
     flex-direction: column;
